@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Librook</title>
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/Formulario.css">
+  </head>
+  <body>
+      <header class="header">
+
+  <div class="container">
+    <div class="logo">
+            <h1>Librook</h1>
+    </div>
+  <div class="boton">
+          <label for="btn-menu">Menù</label>
+
+  </div>
+       <input type="checkbox" id="btn-menu">
+        <nav class="menu">
+            <a href="Inicio.html">Inicio</a>
+            <a href="Generos.html">Generos</a>
+             <a href="Formulario.html">Ayuda</a>
+            
+            
+        </nav>
+  </div>
+</header> 
+
+        <form action="css/enviar.php" method="post">
+          <h2>CONTACTO</h2>
+          <input type="text" name="Nombre" placeholder="Nombre" required>
+          <input type="text" name="Correo" placeholder="Correo" required>
+          <input type="text" name="Telefono" placeholder="Telefonol" required>
+          <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+          <input type="submit" value="Enviar" id="boton">
+                    
+      </form>
+      
+     
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:consolas;
+    
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+    background: #101922;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo{
+    float: left;
+    line-height: 75px;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: default;
+}
+.menu{
+    float: right;
+    line-height: 75px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 14px;
+    transition: all 500ms ease;
+    border-bottom: 2px solid transparent;
+}
+.menu a:hover{
+    color: #4ef040;
+    border-bottom: 2px solid #40de32;
+}
+
+/*Estilos al botòn de menu*/
+#btn-menu{
+    display: none;
+}
+.boton{
+    float: right;
+    display: none;
+}
+.boton label{
+    color:#fff;
+    background: #2a343e;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*--------*/
+/*codigo para dispositivos móviles*/
+@media only screen and (min-width:320px) and (max-width:768px){
+    .header{
+        height: 60px;
+    }
+    .logo, .boton{
+        line-height: 60px;
+    }
+    .logo h1{
+        font-size: 18px;
+    }
+    .menu{
+        position: absolute;
+        background: #1c2834;
+        width: 100%;
+        height: 100vh;
+        top: 60px;
+        left: 0;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+    .menu a{
+        display: block;
+        margin-top: 10px;
+        border-bottom: none;
+    }
+    .menu a:hover{
+      border-bottom: none;
+      background:#234;
+    }
+    .boton{
+        display: block;
+    }
+    
+}
+.titulo h1{
+    color: #3c2323;
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
+
+.yo_antes_de_ti{
+    background-color: floralwhite;
+    margin-right: auto;
+    margin-left: auto;
+    
+    margin-top: 101px;
+    box-shadow: 0px 1px 100px
+    
+}
+.titulo1{
+    
+     font-size: 30px;
+     margin-bottom: 20px;
+    
+}
+.yo_antes_de_ti a{
+    
+    color: #fff;
+    text-decoration: none;
+    background: #a1b8d0;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 80px; 
+}
+.soy_tu_primera_vez{
+    background-color: #ffffbd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    box-shadow: 0px 1px 10px
+}
+.titulo2{
+     font-size: 30px;
+     margin-bottom: 20px;
+      
+}
+.soy_tu_primera_vez a{
+     color: #150000;
+    text-decoration: none;
+    background: #f8ed5f;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 80px;
+}
+.a_dos_metros_de_ti{
+    color: #d68181;
+    background-color: #161140;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    box-shadow: 0px 1px 10px
+    
+}
+.titulo3{
+    font-size: 30px;
+     margin-bottom: 20px;
+}
+.a_dos_metros_de_ti a{
+    color: #d68181;
+    text-decoration: none;
+    background: #0d0880;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 80px;
+}
+.Querido_john{
+    color: #000000;
+    background-color: #fdfdfd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    box-shadow: 0px 1px 10px
+}
+.titulo4{
+    font-size: 30px;
+     margin-bottom: 20px;
+}
+.Querido_john a{
+     color: #ffffff;
+    text-decoration: none;
+    background: #42a742;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 80px;
+    
+}
+.El_diario_de_una_pasion{
+     color: #000000;
+    background-color: #e0f8ff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    box-shadow: 0px 1px 10px
+}
+.titulo5{
+    font-size: 30px;
+     margin-bottom: 20px;
+}
+.El_diario_de_una_pasion a{
+     color: #ffffff;
+    text-decoration: none;
+    background: #4093ac;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 80px;
+}
+.Mi_primer_amor{
+    color: #ffff06;
+    background-color: #3da5c4;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    box-shadow: 0px 1px 10px
+    
+    
+}
+.titulo6{
+    font-size: 30px;
+     margin-bottom: 20px;
+    
+}
+.Mi_primer_amor a{
+    color:  #ffff06;
+    text-decoration: none;
+    background: #5c6d21;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 80px;
+}
